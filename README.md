@@ -112,33 +112,32 @@
     
    Команда:  
   
-   `sudo git clone https://github.com/PavlovaA82/LABORATORY1.git`
+   ➤`sudo git clone https://github.com/PavlovaA82/LABORATORY1.git`
    
 2. Переход в каталог LABORATORY1 и просмотр файлов.  
    Команды:  
-  `cd LABORATORY1`
+  ➤`cd LABORATORY1`
    `ls`
    
 3. Открытие файла README.md с правами sudo.  
    Команда:  
-   `sudo rm README.md`
+   ➤`sudo rm README.md`
    
 4. Переход в подкаталог 12 и просмотр его содержимого.  
    Команды:  
-   `cd 12`
+   ➤`cd 12`
    `ls`
    
 6. Вывод полного пути текущего каталога.
    
    Команда:
-
-   `pwd`
+   ➤`pwd`
    
 7. Копирование всех файлов из `/home/pavlova/LABORATORY1/12/` в `/home/pavlova/grafana_stack_for_docker`.  
 
    Команда:
   
-   `cp /home/pavlova/LABORATORY1/12/* /home/pavlova/grafana_stack_for_docker`
+   ➤`cp /home/pavlova/LABORATORY1/12/* /home/pavlova/grafana_stack_for_docker`
    
 ![image](https://github.com/user-attachments/assets/ed976a97-8d95-44c4-b7cb-03797cd577c5)
 
