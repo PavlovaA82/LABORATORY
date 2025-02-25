@@ -46,4 +46,14 @@
 
 ![image](https://github.com/user-attachments/assets/6fe49830-c73e-40d3-b173-e31bc4a0f033)
 
+Команды которые используютяс:
+
+-`sudo chmod +x /usr/bin/docker-compose`
+-`docker-compose --version`
+
+Данная команда делает файл docker-compose в каталоге /usr/bin/ исполняемым, что позволяет запускать его из командной строки. Следующая команда выводит установленную версию Docker Compose системе.
+
+![image](https://github.com/user-attachments/assets/91876f6e-1940-4f7d-a91b-b4c81d993132)
+
+
 
