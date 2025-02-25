@@ -23,7 +23,7 @@
 
 ![image](https://github.com/user-attachments/assets/29ebcbbd-9be4-4e96-a215-38f94f7fc218)
 
-4.Установка docker, sudo yum install docker-ce docker-ce-cli containerd.io
+Команда `sudo yum install docker-ce docker-ce-cli containerd.io` служит для установки Docker  и сопутствующих компонентов на Oracle Linux-систему с помощью пакетного менеджера `yum` :
 
 ![image](https://github.com/user-attachments/assets/44734710-688b-4c0b-bd85-6cfed88917d6)
 ![image](https://github.com/user-attachments/assets/ecd0ce93-e16c-41d4-bb5e-72bc8bdbedf6)
