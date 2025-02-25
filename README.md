@@ -11,7 +11,9 @@
 
 ![image](https://github.com/user-attachments/assets/21ee432b-11fe-4bbd-9e57-c80567a52b6e)
 
-2.Установка sudo yum install curl
+Затем устанавливаем утилиту `curl`:
+
+-`sudo yum install curl`
 
 ![image](https://github.com/user-attachments/assets/3d7833ab-8b79-406c-ad23-4566b7b4b0d3)
 
