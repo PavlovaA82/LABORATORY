@@ -64,7 +64,7 @@
 
 Далее выполняем следующие команды:
 
-➝`cd grafana_stack_for_docker` — переходит в каталог с конфигурацией Grafana. 
+➤`cd grafana_stack_for_docker` — переходит в каталог с конфигурацией Grafana. 
 
 ➝`sudo mkdir -p /mnt/common_volume/swarm/grafana/config` — создает каталог для конфигурации Grafana.
 
