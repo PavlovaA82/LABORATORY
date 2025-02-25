@@ -52,9 +52,13 @@
 
 -`docker-compose --version`
 
-Данная команда делает файл docker-compose в каталоге /usr/bin/ исполняемым, что позволяет запускать его из командной строки. Следующая команда выводит установленную версию Docker Compose системе.
+Данная команда делает файл `docker-compose` в каталоге `/usr/bin/` исполняемым, что позволяет запускать его из командной строки. Следующая команда выводит установленную версию Docker Compose системе.
 
 ![image](https://github.com/user-attachments/assets/91876f6e-1940-4f7d-a91b-b4c81d993132)
+
+`git clone https://github.com/skl256/grafana_stack_for_docker.git`
+
+![image](https://github.com/user-attachments/assets/56aeca34-c4b3-4335-9c09-91e4c2dc408e)
 
 
 
