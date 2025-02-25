@@ -62,6 +62,22 @@
 
 ![image](https://github.com/user-attachments/assets/56aeca34-c4b3-4335-9c09-91e4c2dc408e)
 
+Далее выполняем следующие команды:
+
+➝`cd grafana_stack_for_docker` — переходит в каталог с конфигурацией Grafana. 
+
+➝`sudo mkdir -p /mnt/common_volume/swarm/grafana/config` — создает каталог для конфигурации Grafana.
+
+➝`sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus-data}` — создает каталоги для конфигурации и данных Grafana и Prometheus.  
+
+➝`sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}` — изменяет владельца каталогов на текущего пользователя. 
+
+➝`touch /mnt/common_volume/grafana/grafana-config/grafana.ini` — создает файл конфигурации Grafana, если его нет.
+
+➝`cp config/* /mnt/common_volume/swarm/grafana/config/` — копирует файлы конфигурации в нужную директорию. 
+
+➝`mv grafana.yaml docker-compose.yaml` — переименовывает конфигурационный файл для Docker Compose.
+
 ![image](https://github.com/user-attachments/assets/024ca827-c94a-42c9-8ca8-4e7f61de6bb2)
 
 
