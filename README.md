@@ -31,3 +31,12 @@
 С помощью команды `sudo systemctl enable docker --now` выполняется включение и запуск службы Docker на системе, управляемой через `systemd`:
 
 ![image](https://github.com/user-attachments/assets/b3441a4c-069d-4aa8-8b58-06d0fc20eeec)
+
+Далее пишем команду:
+
+`COMVER=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)`
+
+Эта команда извлекает номер тега последней версии Docker Compose с помощью API GitHub и сохраняет его в переменной `COMVER`.
+
+![image](https://github.com/user-attachments/assets/b0fa8028-ee55-4d6d-8841-3ab1c5d56058)
+
