@@ -141,6 +141,23 @@
    
 ![image](https://github.com/user-attachments/assets/ed976a97-8d95-44c4-b7cb-03797cd577c5)
 
+На скриншоте выполняются следующие действия в терминале Linux:  
+
+1. Переход между директориями с помощью cd:  
+   ➤`cd ..` — переход в родительскую директорию.  
+   ➤`cd grafana_stack_for_docker/` — вход в папку `grafana_stack_for_docker`.  
+
+2. Просмотр содержимого директории с помощью ls:  
+  Отображение файлов и папок, включая `docker-compose.yaml`, `Readme.md`, `Screenshot_Loki.png`, `Screenshot_Prometheus.png` и папку `config`.  
+
+3. Просмотр полного пути текущей директории с помощью `pwd`.  
+
+4. Удаление файла `docker-compose.yam` с помощью `rm docker-compose.yam.`  
+Повторный просмотр содержимого папкики с `ls`, где удалённый файл уже отсутствует.
+
+![image](https://github.com/user-attachments/assets/53b05971-831d-4841-a635-12dcdcd5cd7f)
+
+
 
 
 
