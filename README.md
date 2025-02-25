@@ -40,3 +40,10 @@
 
 ![image](https://github.com/user-attachments/assets/b0fa8028-ee55-4d6d-8841-3ab1c5d56058)
 
+-`sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose`
+
+Данная команда загружает и устанавливает Docker Compose в системный каталог, соответствующий вашей операционной системе и архитектуре. 
+
+![image](https://github.com/user-attachments/assets/6fe49830-c73e-40d3-b173-e31bc4a0f033)
+
+
