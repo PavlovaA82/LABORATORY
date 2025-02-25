@@ -86,4 +86,13 @@
 
 ![image](https://github.com/user-attachments/assets/cfb0f6ff-90b9-433f-a58c-9c8e8595e2ea)
 
+На скриншоте представлен файл `docker-compose.yaml`, открытый в редакторе `vi` с правами `sudo`.
+
+➤`sudo vi docker-compose.yaml`
+
+Это позволяет редактировать файл, который описывает сервис Grafana в Docker Compose, включая образ, порты, переменные окружения и настройки хранения данных.
+
+![image](https://github.com/user-attachments/assets/24c86f75-5e42-4a0f-ad86-8d3ffc44fda5)
+
+
 
