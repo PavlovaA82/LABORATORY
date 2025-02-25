@@ -80,4 +80,10 @@
 
 ![image](https://github.com/user-attachments/assets/024ca827-c94a-42c9-8ca8-4e7f61de6bb2)
 
+➤`sudo docker compose up -d`
+
+создает и запускает контейнеры согласно файлу docker-compose.yaml. Флаг -d позволяет запускать их в фоновом режиме.
+
+![image](https://github.com/user-attachments/assets/cfb0f6ff-90b9-433f-a58c-9c8e8595e2ea)
+
 
