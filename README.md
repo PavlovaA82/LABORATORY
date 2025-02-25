@@ -28,6 +28,6 @@
 ![image](https://github.com/user-attachments/assets/44734710-688b-4c0b-bd85-6cfed88917d6)
 ![image](https://github.com/user-attachments/assets/ecd0ce93-e16c-41d4-bb5e-72bc8bdbedf6)
 
-5.Запускаем его и разрешаем автозапуск с помощью команды: sudo systemctl enable docker --now
+С помощью команды `sudo systemctl enable docker --now` выполняется включение и запуск службы Docker на системе, управляемой через `systemd`:
 
 ![image](https://github.com/user-attachments/assets/b3441a4c-069d-4aa8-8b58-06d0fc20eeec)
