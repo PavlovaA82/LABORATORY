@@ -94,5 +94,21 @@
 
 ![image](https://github.com/user-attachments/assets/24c86f75-5e42-4a0f-ad86-8d3ffc44fda5)
 
+➤`sudo docker compose stop` — останавливает запущенные контейнеры, но не удаляет их. 
+
+![image](https://github.com/user-attachments/assets/105f5e1c-c7b1-4388-ac59-b51e74ef41cd)
+
+➤`sudo docker compose up -d` — создает и запускает контейнеры в фоновом режиме, если они не запущены.
+
+![image](https://github.com/user-attachments/assets/c3b9a10c-17df-4185-80e3-55303f367351)
+
+➤`sudo docker compose down` — останавливает и удаляет контейнеры, а также сеть, созданную для них.
+
+![image](https://github.com/user-attachments/assets/ccd4c819-9fb7-4f3f-b7ee-e41fcb2b098f)
+
+
+
+
+
 
 
