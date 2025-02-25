@@ -19,7 +19,7 @@
 
 Выполняем скачивание репозитория Docker:
 
-Команда `sudo wget -P /etc/yum.repos.d/ https://download.docker.com/linux/centos/docker-ce.repo` используется для скачивания файла репозитория Docker и сохранения его в директорию /etc/yum.repos.d/ на системе Oracle Linux.
+Команда `sudo wget -P /etc/yum.repos.d/ https://download.docker.com/linux/centos/docker-ce.repo` используется для скачивания файла репозитория Docker и сохранения его в директорию `/etc/yum.repos.d/` на системе Oracle Linux.
 
 ![image](https://github.com/user-attachments/assets/29ebcbbd-9be4-4e96-a215-38f94f7fc218)
 
