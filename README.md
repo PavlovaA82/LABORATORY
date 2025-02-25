@@ -10,9 +10,6 @@
 
 -`sudo yum install wget`
 
-Лаб 1
-1.Начинаем установку sudo yum install wget
-
 ![image](https://github.com/user-attachments/assets/21ee432b-11fe-4bbd-9e57-c80567a52b6e)
 
 2.Установка sudo yum install curl
