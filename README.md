@@ -66,7 +66,7 @@
 
 ➤`cd grafana_stack_for_docker` — переходит в каталог с конфигурацией Grafana. 
 
-➝`sudo mkdir -p /mnt/common_volume/swarm/grafana/config` — создает каталог для конфигурации Grafana.
+➜`sudo mkdir -p /mnt/common_volume/swarm/grafana/config` — создает каталог для конфигурации Grafana.
 
 ➝`sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus-data}` — создает каталоги для конфигурации и данных Grafana и Prometheus.  
 
