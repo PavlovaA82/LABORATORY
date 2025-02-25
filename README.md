@@ -7,13 +7,13 @@
 
 Чтобы установить утилиту `wget` с помощью пакетного менеджера `yum` , выполните команду:
 
-➝`sudo yum install wget`
+➤`sudo yum install wget`
 
 ![image](https://github.com/user-attachments/assets/a9ba59f3-595d-403f-89a3-9b6fb8e99578)
 
 Затем устанавливаем утилиту `curl`:
 
-➝`sudo yum install curl`
+➤`sudo yum install curl`
 
 ![image](https://github.com/user-attachments/assets/3d7833ab-8b79-406c-ad23-4566b7b4b0d3)
 
@@ -34,13 +34,13 @@
 
 Далее пишем команду:
 
-➝`COMVER=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)`
+➤`COMVER=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)`
 
 Эта команда извлекает номер тега последней версии Docker Compose с помощью API GitHub и сохраняет его в переменной `COMVER`.
 
 ![image](https://github.com/user-attachments/assets/b0fa8028-ee55-4d6d-8841-3ab1c5d56058)
 
-➝`sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose`
+➤`sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose`
 
 Данная команда загружает и устанавливает Docker Compose в системный каталог, соответствующий вашей операционной системе и архитектуре. 
 
@@ -48,9 +48,9 @@
 
 Команды, которые используются:
 
-➝`sudo chmod +x /usr/bin/docker-compose`
+➤`sudo chmod +x /usr/bin/docker-compose`
 
-➝`docker-compose --version`
+➤`docker-compose --version`
 
 Данная команда делает файл `docker-compose` в каталоге `/usr/bin/` исполняемым, что позволяет запускать его из командной строки. Следующая команда выводит установленную версию Docker Compose системе.
 
@@ -66,17 +66,17 @@
 
 ➤`cd grafana_stack_for_docker` — переходит в каталог с конфигурацией Grafana. 
 
-➜`sudo mkdir -p /mnt/common_volume/swarm/grafana/config` — создает каталог для конфигурации Grafana.
+➤`sudo mkdir -p /mnt/common_volume/swarm/grafana/config` — создает каталог для конфигурации Grafana.
 
-➝`sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus-data}` — создает каталоги для конфигурации и данных Grafana и Prometheus.  
+➤`sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus-data}` — создает каталоги для конфигурации и данных Grafana и Prometheus.  
 
-➝`sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}` — изменяет владельца каталогов на текущего пользователя. 
+➤`sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}` — изменяет владельца каталогов на текущего пользователя. 
 
-➝`touch /mnt/common_volume/grafana/grafana-config/grafana.ini` — создает файл конфигурации Grafana, если его нет.
+➤`touch /mnt/common_volume/grafana/grafana-config/grafana.ini` — создает файл конфигурации Grafana, если его нет.
 
-➝`cp config/* /mnt/common_volume/swarm/grafana/config/` — копирует файлы конфигурации в нужную директорию. 
+➤`cp config/* /mnt/common_volume/swarm/grafana/config/` — копирует файлы конфигурации в нужную директорию. 
 
-➝`mv grafana.yaml docker-compose.yaml` — переименовывает конфигурационный файл для Docker Compose.
+➤`mv grafana.yaml docker-compose.yaml` — переименовывает конфигурационный файл для Docker Compose.
 
 ![image](https://github.com/user-attachments/assets/024ca827-c94a-42c9-8ca8-4e7f61de6bb2)
 
