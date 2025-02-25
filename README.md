@@ -9,7 +9,7 @@
 
 ➝`sudo yum install wget`
 
-![image](https://github.com/user-attachments/assets/21ee432b-11fe-4bbd-9e57-c80567a52b6e)
+![image](https://github.com/user-attachments/assets/a9ba59f3-595d-403f-89a3-9b6fb8e99578)
 
 Затем устанавливаем утилиту `curl`:
 
