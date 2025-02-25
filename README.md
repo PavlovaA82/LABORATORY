@@ -56,6 +56,8 @@
 
 ![image](https://github.com/user-attachments/assets/91876f6e-1940-4f7d-a91b-b4c81d993132)
 
+Эта команда клонирует репозиторий `grafana_stack_for_docker` с GitHub на вашу локальную машину:
+
 `git clone https://github.com/skl256/grafana_stack_for_docker.git`
 
 ![image](https://github.com/user-attachments/assets/56aeca34-c4b3-4335-9c09-91e4c2dc408e)
