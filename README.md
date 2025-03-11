@@ -162,7 +162,7 @@ Docker
 
 С помощью команды `sudo vi prometheus.yaml `открываем редактор `vi`. Tак же прописываем команду `cd /mnt/common_volume/swarm/grafana/config`. В этом файле необходимо изменить первый IP-адрес на тот, который мы должны были сохранить в памяти. Вставляем его в раздел targets меняем его на `exporter:9100`
 
-![image](https://github.com/user-attachments/assets/498b200a-37ad-49a9-9e17-7702c14c85eb)
+![image](https://github.com/user-attachments/assets/8b5a205f-8202-469d-aa87-2f5302c6e27e)
 
 Перед началом работы необходимо проверить файл `ptometeus.yaml` на наличие ошибок и исправить его на `ptometheus.yaml`. В противном случае может возникнуть ошибка открытия несуществующего или некорректного файла.
 Выполняем  команды, связанные с управлением контейнерами через Docker Compose. Команда 
@@ -196,6 +196,8 @@ Grafana
       * Password: admin
 
     ➤ После нажатия кнопки «Save & test» убедитесь, что в результате появится зелёная галочка.
+
+5. В меню необходимо выбрать вкладку «Dashboards» и создать Dashboard. Затем следует дождаться появления кнопки «Import dashboard». Далее в строку `Find and import dashboards for common applications at grafana.com/dashboards` вписываем `1860`. Ждем кнопку Load
 
    
   
