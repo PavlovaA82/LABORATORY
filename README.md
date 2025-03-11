@@ -174,10 +174,11 @@ Grafana
 
 1. В Oracle Linux переходим на сайт: `localhost:3000`
    
- ➤ User: admin
-   
- ➤ Password: admin
+ ➤ User & Password: admin
+ 
+   ⮞ Код графаны: 1860 
 
-   ➢ Код графаны:
+   ⮞ Код прометеуса: http://prometheus:9090
+
 
 
