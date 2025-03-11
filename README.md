@@ -177,7 +177,7 @@ Grafana
 
    ➤ User & Password: admin
  
-      * Код графаны: 1860 
+      * Код графаны: 3000
 
       * Код прометеуса: http://prometheus:9090
 
