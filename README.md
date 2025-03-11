@@ -198,6 +198,9 @@ Grafana
     ➤ После нажатия кнопки «Save & test» убедитесь, что в результате появится зелёная галочка.
 
 5. В меню необходимо выбрать вкладку «Dashboards» и создать Dashboard. Затем следует дождаться появления кнопки «Import dashboard». Далее в строку `Find and import dashboards for common applications at grafana.com/dashboards` вписываем `1860`. Ждем кнопку Load
+   
+6. Select Prometheus ждем кнопку "Import"
+   
 
    
   
