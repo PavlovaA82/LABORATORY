@@ -174,10 +174,10 @@ Grafana
 
 1. В Oracle Linux переходим на сайт: `localhost:3000`
    
-   ➤ User: admin
+ ➤ User: admin
    
-   ➤ Password: admin
+ ➤ Password: admin
 
-       ➢ Код графаны:
+   ➢ Код графаны:
 
 
