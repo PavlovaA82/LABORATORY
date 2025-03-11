@@ -167,5 +167,6 @@ Prometheus
 Выполняем  команды, связанные с управлением контейнерами через Docker Compose. Команда 
 `sudo vi ptometheus.yaml` предназначена для открытия файла `ptometheus.yaml` в редакторе `vi` с правами суперпользователя. Команда `sudo docker compose up -d` запускает контейнеры, определенные в `docker-compose.yaml`, в фоновом режиме.
 
+![image](https://github.com/user-attachments/assets/5aa98d9b-d9d1-458f-8d35-5ebbc06c905f)
 
 
