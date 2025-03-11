@@ -174,11 +174,11 @@ Grafana
 
 1. В Oracle Linux переходим на сайт: `localhost:3000`
 
-➤ User & Password: admin
+   ➤ User & Password: admin
  
-  ⮞ Код графаны: 1860 
+     ⮞ Код графаны: 1860 
 
-  ⮞ Код прометеуса: http://prometheus:9090
+     ⮞ Код прометеуса: http://prometheus:9090
 
 2. В меню выбираем вкладку Dashboards и создаем Dashboard
 
@@ -188,13 +188,13 @@ Grafana
 
 4. Authentication
 
-➤ Basic authentication
+    ➤ Basic authentication
 
-  ⮞ User: admin
+     ⮞ User: admin
 
-  ⮞ Password: admin
+     ⮞ Password: admin
 
-➤ После нажатия кнопки «Save & test» убедитесь, что в результате появится зелёная галочка.
+    ➤ После нажатия кнопки «Save & test» убедитесь, что в результате появится зелёная галочка.
   
 
    
