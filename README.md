@@ -178,6 +178,6 @@ Grafana
    
    ➤ Password: admin
 
-      ➢ 
+       ➢ Код графаны:
 
 
