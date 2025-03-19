@@ -10,13 +10,13 @@ Docker
 
 Чтобы установить утилиту `wget` с помощью пакетного менеджера `yum` , выполните команду:
 
-➤`sudo yum install wget`
+➤ `sudo yum install wget`
 
 ![image](https://github.com/user-attachments/assets/a9ba59f3-595d-403f-89a3-9b6fb8e99578)
 
 Затем устанавливаем утилиту `curl`:
 
-➤`sudo yum install curl`
+➤ `sudo yum install curl`
 
 ![image](https://github.com/user-attachments/assets/3d7833ab-8b79-406c-ad23-4566b7b4b0d3)
 
@@ -37,13 +37,13 @@ Docker
 
 Далее пишем команду:
 
-➤`COMVER=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)`
+➤ `COMVER=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)`
 
 Эта команда извлекает номер тега последней версии Docker Compose с помощью API GitHub и сохраняет его в переменной `COMVER`.
 
 ![image](https://github.com/user-attachments/assets/b0fa8028-ee55-4d6d-8841-3ab1c5d56058)
 
-➤`sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose`
+➤ `sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose`
 
 Данная команда загружает и устанавливает Docker Compose в системный каталог, соответствующий вашей операционной системе и архитектуре. 
 
@@ -51,9 +51,9 @@ Docker
 
 Команды, которые используются:
 
-➤`sudo chmod +x /usr/bin/docker-compose`
+➤ `sudo chmod +x /usr/bin/docker-compose`
 
-➤`docker-compose --version`
+➤ `docker-compose --version`
 
 Данная команда делает файл `docker-compose` в каталоге `/usr/bin/` исполняемым, что позволяет запускать его из командной строки. Следующая команда выводит установленную версию Docker Compose системе.
 
@@ -61,29 +61,29 @@ Docker
 
 Эта команда клонирует репозиторий `grafana_stack_for_docker` с GitHub на вашу локальную машину:
 
-➤`git clone https://github.com/skl256/grafana_stack_for_docker.git`
+➤ `git clone https://github.com/skl256/grafana_stack_for_docker.git`
 
 ![image](https://github.com/user-attachments/assets/56aeca34-c4b3-4335-9c09-91e4c2dc408e)
 
 Далее выполняем следующие команды:
 
-➤`cd grafana_stack_for_docker` — переходит в каталог с конфигурацией Grafana. 
+➤ `cd grafana_stack_for_docker` — переходит в каталог с конфигурацией Grafana. 
 
-➤`sudo mkdir -p /mnt/common_volume/swarm/grafana/config` — создает каталог для конфигурации Grafana.
+➤ `sudo mkdir -p /mnt/common_volume/swarm/grafana/config` — создает каталог для конфигурации Grafana.
 
-➤`sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus-data}` — создает каталоги для конфигурации и данных Grafana и Prometheus.  
+➤ `sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus-data}` — создает каталоги для конфигурации и данных Grafana и Prometheus.  
 
-➤`sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}` — изменяет владельца каталогов на текущего пользователя. 
+➤ `sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}` — изменяет владельца каталогов на текущего пользователя. 
 
-➤`touch /mnt/common_volume/grafana/grafana-config/grafana.ini` — создает файл конфигурации Grafana, если его нет.
+➤ `touch /mnt/common_volume/grafana/grafana-config/grafana.ini` — создает файл конфигурации Grafana, если его нет.
 
-➤`cp config/* /mnt/common_volume/swarm/grafana/config/` — копирует файлы конфигурации в нужную директорию. 
+➤ `cp config/* /mnt/common_volume/swarm/grafana/config/` — копирует файлы конфигурации в нужную директорию. 
 
-➤`mv grafana.yaml docker-compose.yaml` — переименовывает конфигурационный файл для Docker Compose.
+➤ `mv grafana.yaml docker-compose.yaml` — переименовывает конфигурационный файл для Docker Compose.
 
 ![image](https://github.com/user-attachments/assets/024ca827-c94a-42c9-8ca8-4e7f61de6bb2)
 
-➤`sudo docker compose up -d`
+➤ `sudo docker compose up -d`
 
 создает и запускает контейнеры согласно файлу docker-compose.yaml. Флаг -d позволяет запускать их в фоновом режиме.
 
@@ -91,21 +91,21 @@ Docker
 
 На скриншоте представлен файл `docker-compose.yaml`, открытый в редакторе `vi` с правами `sudo`.
 
-➤`sudo vi docker-compose.yaml`
+➤ `sudo vi docker-compose.yaml`
 
 Это позволяет редактировать файл, который описывает сервис Grafana в Docker Compose, включая образ, порты, переменные окружения и настройки хранения данных.
 
 ![image](https://github.com/user-attachments/assets/24c86f75-5e42-4a0f-ad86-8d3ffc44fda5)
 
-➤`sudo docker compose stop` — останавливает запущенные контейнеры, но не удаляет их. 
+➤ `sudo docker compose stop` — останавливает запущенные контейнеры, но не удаляет их. 
 
 ![image](https://github.com/user-attachments/assets/105f5e1c-c7b1-4388-ac59-b51e74ef41cd)
 
-➤`sudo docker compose up -d` — создает и запускает контейнеры в фоновом режиме, если они не запущены.
+➤ `sudo docker compose up -d` — создает и запускает контейнеры в фоновом режиме, если они не запущены.
 
 ![image](https://github.com/user-attachments/assets/c3b9a10c-17df-4185-80e3-55303f367351)
 
-➤`sudo docker compose down` — останавливает и удаляет контейнеры, а также сеть, созданную для них.
+➤ `sudo docker compose down` — останавливает и удаляет контейнеры, а также сеть, созданную для них.
 
 ![image](https://github.com/user-attachments/assets/ccd4c819-9fb7-4f3f-b7ee-e41fcb2b098f)
 
@@ -115,40 +115,40 @@ Docker
     
    Команда:  
   
-   ➤`sudo git clone https://github.com/PavlovaA82/LABORATORY1.git`
+   ➤ `sudo git clone https://github.com/PavlovaA82/LABORATORY1.git`
    
 2. Переход в каталог LABORATORY1 и просмотр файлов.  
    Команды:  
-  ➤`cd LABORATORY1`
+  ➤ `cd LABORATORY1`
    `ls`
    
 3. Открытие файла README.md с правами sudo.  
    Команда:  
-   ➤`sudo rm README.md`
+   ➤ `sudo rm README.md`
    
 4. Переход в подкаталог 12 и просмотр его содержимого.  
    Команды:  
-   ➤`cd 12`
+   ➤ `cd 12`
    `ls`
    
 6. Вывод полного пути текущего каталога.
    
    Команда:
-   ➤`pwd`
+   ➤ `pwd`
    
 7. Копирование всех файлов из `/home/pavlova/LABORATORY1/12/` в `/home/pavlova/grafana_stack_for_docker`.  
 
    Команда:
   
-   ➤`cp /home/pavlova/LABORATORY1/12/* /home/pavlova/grafana_stack_for_docker`
+   ➤ `cp /home/pavlova/LABORATORY1/12/* /home/pavlova/grafana_stack_for_docker`
    
 ![image](https://github.com/user-attachments/assets/ed976a97-8d95-44c4-b7cb-03797cd577c5)
 
 На скриншоте выполняются следующие действия в терминале Linux:  
 
 1. Переход между директориями с помощью cd:  
-   ➤`cd ..` — переход в родительскую директорию.  
-   ➤`cd grafana_stack_for_docker/` — вход в папку `grafana_stack_for_docker`.  
+   ➤ `cd ..` — переход в родительскую директорию.  
+   ➤ `cd grafana_stack_for_docker/` — вход в папку `grafana_stack_for_docker`.  
 
 2. Просмотр содержимого директории с помощью ls:  
   Отображение файлов и папок, включая `docker-compose.yaml`, `Readme.md`, `Screenshot_Loki.png`, `Screenshot_Prometheus.png` и папку `config`.  
@@ -223,7 +223,23 @@ VicroriaMetrics
  
    * Снизу меняем на "cod"
 
-     Далее переходим в командную строку и пишем команду:
+Далее переходим в командную строку и пишем команду:
+
+`echo -e "# TYPE OILCOINT_metric1 gauge\nOILCOINT_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus`
+
+Эта команда создаёт метрику `OILCOINT_metric1` типа gauge со значением 0 и отправляет её в Prometheus через HTTP-запрос на `http://localhost:8428/api/v1/import/prometheus.` Это используется для добавления метрик в Prometheus вручную.
+
+Полученный результат:
+
+На сайте: `localhost:3000` 
+
+![image](https://github.com/user-attachments/assets/eb8d3e64-25b1-4359-a4ce-a2e39db52b9b)
+
+На сайте: `localhost:8428`
+
+![image](https://github.com/user-attachments/assets/066dbd87-fdf7-4f8c-8373-bf571de81b6f)
+
+
 
 
 
