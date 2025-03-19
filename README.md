@@ -213,15 +213,15 @@ VicroriaMetrics
 
 `localhost:3000`
 
-   *Переходим в меню в connection 
+   * Переходим в меню в connection 
  
-   *Там пишем http://victoriametrics:8428
+   * Там пишем http://victoriametrics:8428
  
-   *Далее заменяем имя из "Prometheus" на "Vika"
+   * Далее заменяем имя из "Prometheus" на "Vika"
  
-   *Нажимаем на dashboards add visualition выбираем "Vika"
+   * Нажимаем на dashboards add visualition выбираем "Vika"
  
-   *Снизу меняем на "cod"
+   * Снизу меняем на "cod"
 
 
 
