@@ -242,8 +242,14 @@ VicroriaMetrics
 
 ![image](https://github.com/user-attachments/assets/066dbd87-fdf7-4f8c-8373-bf571de81b6f)
 
-Alertmanager
+Настройка второй виртуалки
 ----------------------------------------------------------------------------------------------------------------------------------------
+
+Перед началом работы создаем новую виртуалку и устанавливаем Oracle Linux. После установки нужно установить Docker и docker-compose. 
+
+Устанавливаем команду `sudo yum install wget`:
+
+![image](https://github.com/user-attachments/assets/be65805d-4729-44c2-b4ed-7be4ab59bd1b)
 
 
 
