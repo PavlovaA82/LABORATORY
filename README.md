@@ -280,6 +280,20 @@ VicroriaMetrics
 
  ![image](https://github.com/user-attachments/assets/4ec0fcbe-962c-4132-ad31-41b6363738f4)
 
+Эта команда получает последнюю версию Docker Compose из GitHub API, извлекает номер версии и сохраняет его в переменную COMVER.
+
+➤ `COMVER=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep 'tag_name' | cut -d\" -f4)`
+
+Tеперь скачиваем скрипт docker-compose и помещаем его в каталог /usr/bin: 
+ 
+➤ `sudo curl -L "https://github.com/docker/compose/releases/download/$COMVER/docker-compose-$(uname -s)-$(uname -m)" -o /usr/bin/docker-compose`
+
+Даем права файлу на исполнение:  `sudo chmod +x /usr/bin/docker-compose` 
+ 
+Запускаем docker-compose с выводом его версии:  `docker-compose –version`
+
+Настройка брандмауэра
+----------------------------------------------------------------------------------------------------------------------------------------
  
 
 
