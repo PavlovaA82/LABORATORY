@@ -331,6 +331,29 @@ Tеперь скачиваем скрипт docker-compose и помещаем �
 
 https://github.com/PavlovaA82/LABORATORY/blob/main/2/docker-compose.yml
 
+В итоге получается так, как на скрине:
+
+![image](https://github.com/user-attachments/assets/e815eeff-c68e-4a57-8ab0-42bb3c1022c1)
+
+Создаем конфигурационный файл для prometheus. Копируем его из: https://github.com/PavlovaA82/LABORATORY/blob/main/2/prometheus.yml
+
+ ➤ `sudo vi prometheus/prometheus.yml`
+
+ ![image](https://github.com/user-attachments/assets/b8f041f4-efaa-4488-95b3-82b219e03f0f)
+
+ После все введённых данных прописывая:   
+ ➤ `sudo docker compose up -d`- Эта команда запускает контейнеры из `docker-compose.yml` в фоновом режиме `-d` с правами суперпользователя `sudo`.
+
+ После этого прописываем в браузере linux:  
+  * `locahost:9090` 
+ 
+После чего должно открыться эта страница:
+
+
+ 
+ 
+
+
 
 
  
