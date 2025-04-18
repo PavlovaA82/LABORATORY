@@ -253,6 +253,13 @@ VicroriaMetrics
 
 ![image](https://github.com/user-attachments/assets/be65805d-4729-44c2-b4ed-7be4ab59bd1b)
 
+Вводим команду `sudo dnf install git-all`
+
+`dnf` — современный менеджер пакетов (аналог `yum` в новых версиях RHEL/Oracle Linux). `git-all`— метапакет, который должен установить Git и дополнительные компоненты (например, GUI-инструменты).
+
+![image](https://github.com/user-attachments/assets/ff1161be-5416-4d82-8665-6373e6234a53)
+
+
 Далее вводим эти команды:
 
 Скачиваем файл репозитория: 
