@@ -360,7 +360,7 @@ https://github.com/PavlovaA82/LABORATORY/blob/main/2/docker-compose.yml
 
 Если всё так, то это отлично всё правильно!!!!!!!!
 
-Grafana
+Grafana для 2 виртуалки
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 Добавим к нашему стеку графану. Открываем файл: 
@@ -374,6 +374,37 @@ Grafana
  ➤ `sudo docker compose stop` 
 
  ➤ `sudo docker compose up -d`
+
+ 1. В Oracle Linux переходим на сайт: localhost:3000
+
+➤ User & Password: admin
+
+   * Код графаны: 3000
+
+   * Код прометеуса: http://prometheus:9090
+
+2. В меню выбираем вкладку Dashboards и создаем Dashboard
+
+➤ Ждем кнопку +Add visualization, а после "Configure a new data source", выбираем Prometheus
+
+3. Connection: http://prometheus:9090
+
+4. Authentication
+
+➤ Basic authentication
+
+  * User: admin ; Password: admin
+
+➤ После нажатия кнопки «Save & test» убедитесь, что в результате появится зелёная галочка.
+
+5. В меню необходимо выбрать вкладку «Dashboards» и создать Dashboard. Затем следует дождаться появления кнопки «Import dashboard». Далее в строку Find and import dashboards for common applications at grafana.com/dashboards вписываем 1860. Ждем кнопку Load
+
+6. Select Prometheus ждем кнопку "Import"
+
+Результат:
+
+![image](https://github.com/user-attachments/assets/0290b240-1402-4cf8-a6d2-66eaa32aa9fe)
+
  
 
 
