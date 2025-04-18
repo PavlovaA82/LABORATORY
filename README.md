@@ -249,6 +249,8 @@ VicroriaMetrics
 
 Устанавливаем команду `sudo yum install wget`:
 
+`sudo` — выполнение команды с правами суперпользователя. `yum` — менеджер пакетов в старых версиях RHEL/Oracle Linux (в новых версиях заменён на dnf). `install wget` — установка пакета `wget` (утилита для загрузки файлов из интернета).
+
 ![image](https://github.com/user-attachments/assets/be65805d-4729-44c2-b4ed-7be4ab59bd1b)
 
 
