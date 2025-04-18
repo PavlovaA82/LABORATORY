@@ -363,6 +363,18 @@ https://github.com/PavlovaA82/LABORATORY/blob/main/2/docker-compose.yml
 Grafana
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+Добавим к нашему стеку графану. Открываем файл: 
+
+ ➤ `sudo vi docker-compose.yml`
+
+ ![image](https://github.com/user-attachments/assets/b1f9e751-31c2-4f54-af79-7d3d8c8a2a08)
+
+ После чего перезапускаем:
+ 
+ ➤ `sudo docker compose stop` 
+
+ ➤ `sudo docker compose up -d`
+ 
 
 
  
