@@ -327,6 +327,12 @@ Tеперь скачиваем скрипт docker-compose и помещаем �
   
  ➤ `sudo vi docker-compose.yml`
 
+Из созданной папки 2 копируем и вставляем: 
+
+https://github.com/PavlovaA82/LABORATORY/blob/main/2/docker-compose.yml
+
+
+
  
  
 
