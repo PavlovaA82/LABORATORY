@@ -428,38 +428,45 @@ Grafana для 2 виртуалки
 
 ![image](https://github.com/user-attachments/assets/cd03b7c0-45d3-47a6-a3be-d7c8eeef0cff)
 
-
-
-
-
+Теперь открываем конфигурационный файл для prometheus: 
  
-
+ ➤ `sudo vi prometheus/prometheus.yml` 
  
+И добавим строки `rule_files`:
 
+![image](https://github.com/user-attachments/assets/0a7fa211-e8d7-4728-a01f-ec1011f1d9b8)
 
+Создаем файл с правилами оповещения: 
+
+ ➤ `sudo vi prometheus/alert.rules` 
  
+И добавляем c - https://github.com/PavlovaA82/LABORATORY/blob/main/2/alert.rules
+
+![image](https://github.com/user-attachments/assets/e99ae6cb-af9f-4ab3-8f4d-51ff884bb35d)
+
+Переходим к конфигурированию alertmanager: 
+
+ ➤ `sudo vi alertmanager/config.yml`
+
+ И добавляем c - https://github.com/PavlovaA82/LABORATORY/blob/main/2/config.yml
+
+ ![image](https://github.com/user-attachments/assets/ffa06762-850b-4f19-bd10-7792a198c910)
+
+ После этого перезапуска вводим команды:
+
+ ➤ `sudo docker compose stop` 
+
+ ➤ `sudo docker compose up -d`
+
+ Открываем браузер и переходим по адресу `locahost:9090` — на вкладке Alerts мы должны увидеть нашу настройку:
+
+ ![image](https://github.com/user-attachments/assets/e19e8fc8-0c3d-4793-a65b-d8257ac626fb)
+
+ Попробуем проверить работу оповещения. Отключаем наш `node exporter`:
  
-
-
-
-
+ ➤ `docker stop exporter`
  
- 
+На телеграм должно прийти оповещение:
 
-
-
-
- 
- 
-
-
-
-
-
-   
-  
-
-   
-
-
+![image](https://github.com/user-attachments/assets/802f4864-38bb-472c-bc85-49509167030f)
 
