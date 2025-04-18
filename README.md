@@ -253,6 +253,29 @@ VicroriaMetrics
 
 ![image](https://github.com/user-attachments/assets/be65805d-4729-44c2-b4ed-7be4ab59bd1b)
 
+Далее вводим эти команды:
+
+Скачиваем файл репозитория: 
+ 
+➤ `sudo wget -P /etc/yum.repos.d/ https://download.docker.com/linux/centos/docker-ce.repo`
+
+Устанавливаем docker: 
+ 
+ ➤  `sudo yum install docker-ce docker-ce-cli containerd.io`
+
+Запускаем его и разрешаем автозапуск: 
+ 
+ ➤  `sudo systemctl enable docker --now`
+ 
+Для этого сначала убедимся в наличие пакета curl. На системы RPM: 
+ 
+ ➤  `sudo yum install curl` - `curl` — утилита для передачи данных по различным сетевым протоколам
+
+ ![image](https://github.com/user-attachments/assets/4ec0fcbe-962c-4132-ad31-41b6363738f4)
+
+ 
+
+
 
 
 
