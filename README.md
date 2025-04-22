@@ -287,6 +287,39 @@ VicroriaMetrics
 
   ![image](https://github.com/user-attachments/assets/b16f53fa-97f6-4700-8802-b44d2afbc65f)
 
+Команда `setenforce 0` пытается временно отключить режим SELinux (перевести его в состояние Permissive)
+
+Отключаем с помощью команды - `sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config`
+
+Эта команда отключает SELinux на постоянной основе, изменяя его настройку в конфигурационном файле `/etc/selinux/config` с `enforcing` на `disabled`, что может потребоваться для упрощения администрирования или решения проблем совместимости, но снижает уровень безопасности системы.
+
+![image](https://github.com/user-attachments/assets/c05a4e5f-a64d-42cd-af90-5d54093f60c2)
+
+Далее скачивается Prometheus версии 3.3.0 от 2025-04-15. Загрузка выполняется с официального сайта `https://prometheus.io/download/` с использованием команды wget и ссылки на релиз:  
+
+ ➤ `wget https://github.com/prometheus/prometheus/releases/download/v3.3.0/prometheus-3.3.0.linux-amd64.tar.gz`
+
+ ![image](https://github.com/user-attachments/assets/6e6f4459-63e3-4ad3-ae7c-d8972b2e9468)
+
+ Данная команда `sudo mkdir /etc/prometheus /var/lib/prometheus` - создаёт системные каталоги /etc/prometheus (для конфигурации) и /var/lib/prometheus (для хранения данных), необходимые для работы Prometheus в Oracle Linux.
+
+ ![image](https://github.com/user-attachments/assets/0a44de26-88f5-4b9e-b5bc-eff4ffde5d2e)
+
+ Данная команда `tar -zxf prometheus-*.linux-amd64.tar.gz` распаковывает архив `prometheus-*.linux-amd64.tar.gz`, извлекая файлы Prometheus для их последующего использования в системе.
+
+ ![image](https://github.com/user-attachments/assets/6840426f-39e1-431d-92e5-ac4b06dc62d9)
+
+ Команда переходит в распакованную директорию Prometheus (prometheus-3.3.0.linux-amd64), чтобы продолжить настройку или запуск сервиса.
+
+ ![image](https://github.com/user-attachments/assets/970fbc98-3092-4746-9998-7fde6f7113c5)
+
+
+
+ 
+
+
+
+
   
 
 
