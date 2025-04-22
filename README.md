@@ -322,33 +322,20 @@ VicroriaMetrics
 
   ➤ `cp prometheus.yml /etc/prometheus/`
 
- Эти команды копируют исполняемые файлы prometheus и promtool в /usr/local/bin/, а конфигурационный файл prometheus.yml в /etc/prometheus/, что необходимо для правильной установки и настройки Prometheus в системе.
+ Эти команды копируют исполняемые файлы `prometheus` и `promtool` в `/usr/local/bin/`, а конфигурационный файл prometheus.yml в `/etc/prometheus/`, что необходимо для правильной установки и настройки Prometheus в системе.
 
 ![image](https://github.com/user-attachments/assets/bc7dd14c-2995-4996-adda-30e3d42f50a0)
 
+ ➤ `cd .. && rm -rf prometheus-*.linux-amd64/ && rm -f prometheus-*.linux-amd64.tar.gz`
+
+ ➤ `pwd`
+
+Эта команда выполняет переход в домашнюю директорию (cd ...), после чего удаляет распакованную папку `prometheus-x.linux-amd64/` и архив `prometheus-x.linux-amd64.tar.gz`, освобождая место и завершая процесс установки. Проверка командой `pwd` подтверждает, что пользователь находится в `/home/paylova`, что исключает случайное удаление нужных файлов.
+
+![image](https://github.com/user-attachments/assets/2060444d-9aab-4bcf-aeb1-e3ecb4f5608e)
+
+Выполняем команду `ls -l` отображает содержимое домашней директории пользователя в подробном формате, включая права доступа, владельца и дату создания, что позволяет проверить наличие и состояние файлов и папок.
+
+![image](https://github.com/user-attachments/assets/eaaef972-4b0e-4df4-a9d5-c38cc3b7bccf)
 
 
-
-
-
- 
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
- 
