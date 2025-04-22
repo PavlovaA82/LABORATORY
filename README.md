@@ -267,6 +267,14 @@ VicroriaMetrics
 
 ![image](https://github.com/user-attachments/assets/9d4815d2-65e6-48b6-8c5f-9e48c011ff06)
 
+Вводим команду :
+
+  ➤ `sudo yum install wget tar`
+
+Команда `sudo yum install wget tar` на Oracle Linux 9 устанавливает утилиты `wget` (для загрузки файлов из интернета) и `tar` (для работы с архивами). Эти инструменты часто используются для скачивания и распаковки программного обеспечения. Установка выполняется с правами суперпользователя `sudo`, чтобы разрешить системные изменения.
+
+![image](https://github.com/user-attachments/assets/1df38cda-d96e-429e-962a-6c85ebe3987f)
+
 
 
 
