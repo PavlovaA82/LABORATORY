@@ -305,13 +305,29 @@ VicroriaMetrics
 
  ![image](https://github.com/user-attachments/assets/0a44de26-88f5-4b9e-b5bc-eff4ffde5d2e)
 
- Данная команда `tar -zxf prometheus-*.linux-amd64.tar.gz` распаковывает архив `prometheus-*.linux-amd64.tar.gz`, извлекая файлы Prometheus для их последующего использования в системе.
+ Эта команда `tar -zxf prometheus-*.linux-amd64.tar.gz` распаковывает архив `prometheus-*.linux-amd64.tar.gz`, извлекая файлы Prometheus для их последующего использования в системе.
 
  ![image](https://github.com/user-attachments/assets/6840426f-39e1-431d-92e5-ac4b06dc62d9)
 
- Команда переходит в распакованную директорию Prometheus (prometheus-3.3.0.linux-amd64), чтобы продолжить настройку или запуск сервиса.
+ Команда `cd prometheus-*.linux-amd64` - переходит в распакованную директорию Prometheus (prometheus-3.3.0.linux-amd64), чтобы продолжить настройку или запуск сервиса.
 
- ![image](https://github.com/user-attachments/assets/970fbc98-3092-4746-9998-7fde6f7113c5)
+![image](https://github.com/user-attachments/assets/970fbc98-3092-4746-9998-7fde6f7113c5)
+
+ `pwd` отображает текущий рабочий каталог, подтверждая, что пользователь находится в директории `/home/paylova/prometheus-3.3.0.linux-amd64`, что важно для ориентации в файловой системе при настройке Prometheus.
+
+ ![image](https://github.com/user-attachments/assets/9601638a-d147-40a6-b4c5-61f1cdb251ca)
+
+
+  ➤ `sudo cp prometheus promtool /usr/local/bin/`
+
+  ➤ `cp prometheus.yml /etc/prometheus/`
+
+ Эти команды копируют исполняемые файлы prometheus и promtool в /usr/local/bin/, а конфигурационный файл prometheus.yml в /etc/prometheus/, что необходимо для правильной установки и настройки Prometheus в системе.
+
+![image](https://github.com/user-attachments/assets/bc7dd14c-2995-4996-adda-30e3d42f50a0)
+
+
+
 
 
 
